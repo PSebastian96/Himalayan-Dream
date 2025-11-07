@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+body {
+  font-family: 'Kalam', cursive;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+/* General Styles for Navigation */
+.nav-link {
+  color: aliceblue;
+}
+
+.nav-link:hover {
+  color: rgb(253, 212, 151);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .nav-link.active {
+  color: rgb(253, 212, 151) !important; /* Ensure this rule takes priority */
+  font-weight: bold;
+  text-decoration: none;  
+}
+
+.underlined {
+  text-decoration: underline;
+}
+/* Button Styles */
+.btn-blanch {
+  background-color: rgb(255, 210, 143);
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-blanch:hover {
+  background-color: rgb(252, 182, 77);
+  color: black;
+}
+
+/* Text Link Styles */
+.text-brand {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.text-brand:hover {
+  color: rgb(255, 223, 174);
+  text-decoration: none;
+}
+
+/* Hero Section */
+#hero-container {
+  height: 100vh;
+  background: url('images/heroimage.jpg') no-repeat top center fixed;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#buddhism-container {
+  height: 100vh;
+  background: url('images/silverbuddha.jpg') no-repeat top center fixed;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#contact-container {
+  height: 100vh;
+  background: url('images/buddhaheropic.jpg') no-repeat top center fixed;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#garden-container {
+  height: 100vh;
+  background: url('images/gardenhero.jpg') no-repeat top center fixed;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#meditation-container {
+  height: 100vh;
+  background: url('images/stackedrocks.jpg') no-repeat top center fixed;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#med-form-container{
+  background: url("images/oceanzen.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 920px;
+  width: 100%;
+}
+
+#yoga-form-container {
+  clear: left;
+  background: url("images/yogaform.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 920px;
+  width: 100%;
+}
+
+#yoga-container {
+  height: 100vh;
+  background: url('images/yogahero.jpg') no-repeat top center fixed;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35); /* Dark overlay for readability */
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.3); /* Slightly darker for better contrast */
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Colour */
+
+.bg-peach {
+  background-color: rgb(255, 201, 154);
+}
+
+.bg-purple {
+  background-color: rgb(167, 4, 167);
+}
+
+/* CSS for Background Colors */
+.bg-buddha-page {
+  background-color: #f1c661; /* Soft Sand */
+  color: #4a403a; /* Deep Taupe for Text */
+}
+
+/* Card Backgrounds */
+.bg-modern-card-1 {
+  background-color: #f7e1c1; /* Warm Light Peach */
+  color: #5c4328; /* Earthy Brown for Text */
+}
+
+.bg-noble-2 {
+  background-color: #e6eddc; /* Soft Olive Green */
+  color: #3b513a; /* Deep Forest Green for Text */
+}
+
+.bg-noble-3 {
+  background-color: #cfe4e8; /* Muted Sky Blue */
+  color: #2a505c; /* Ocean Blue for Text */
+}
+
+.bg-noble-4 {
+  background-color: #fae4d4; /* Light Rose Beige */
+  color: #5a3e2b; /* Warm Mahogany for Text */
+}
+
+/* Optional - Add a subtle box shadow for cards */
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded Corners */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Removes default left padding */
+  margin-left: 0; /* Removes any additional left margin */
+}
+
+.icon-peach {
+  color: blanchedalmond;
+}
+
+.icon-peach:hover {
+  color: rgb(255, 201, 154);
+}
+
+/* Resposnive Map */
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Gallery Container */
+
+#gallery-container {
+  background-color: rgb(221, 127, 84);
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+
+#gallery-garden {
+  column-count: 3;
+  column-gap: 5px;
+}
+
+#gallery-garden img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+/* meditation and yoga form section */
+.layout-form { 
+  color: white;
+  background-color:rgba(60, 60, 60, 0.6);
+  max-width: 100%;
+  position:absolute;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 2rem 1rem 1rem 5rem;
+}
+
+.layout-form p {
+  text-align: center;
+  font-size: larger;
+  text-decoration: underline;
+}
+
+.content-form-input {
+  text-align: center;
+  background: rgba(60, 60, 60, 0.5);
+  color:#ffffff;
+  width:100%;
+  height:25px;
+  margin:5px 0 20px 0;
+  border: 1px solid #f9f3ed;
+  border-radius:3px;
+}
+.content-form-input:hover {
+  border-color:#f16c6b;
+}
+.main-button { 
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  padding: 10px 22px 10px 22px;
+  text-align:center;
+  font-size:100%;
+  border-style: solid;
+  border-color: black;
+  background-color: orange;
+  color:#fafafa;
+  display:block;
+}
+
+.main-button:hover { 
+  background-color:#fc0000;
+  color:#ffffff;
+}
+
+@media only screen and (max-width: 800px) {
+    
+  #gallery-garden {
+      column-count: 1;
+  }
+
+  .video-content i {
+      height: auto;
+      width: auto;
+  }
+  #yoga-form-container {
+      background-position: left;
+      height: 950px;
+      width: 100%;
+  }
+  
+  #med-form-container{
+      background: url("images/zengirl.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 950px;
+      width: 100%;
+  }
+
+  .layout-form { 
+      margin: 1rem 1rem 1rem 1rem;
+  }
+}
